@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+.env.local
+.DS_Store
+*.log
+
+# Internal build scaffolding (not part of the public app)
+BUILD-PROMPT.md

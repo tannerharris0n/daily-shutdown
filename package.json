@@ -1,0 +1,30 @@
+{
+  "name": "daily-shutdown",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "60-second end-of-day ritual for ADHD-prone makers",
+  "license": "MIT",
+  "author": "Tanner Harrison",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "node server.cjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0"
+  }
+}
