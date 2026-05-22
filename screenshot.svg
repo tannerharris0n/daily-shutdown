@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 920" width="880" height="920" font-family="'DM Sans', system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.2" flood-color="#000" flood-opacity="0.04"/>
+    </filter>
+    <filter id="pageShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="18" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <clipPath id="card1Clip"><rect x="40" y="210" width="800" height="150" rx="14"/></clipPath>
+    <clipPath id="card2Clip"><rect x="40" y="378" width="800" height="180" rx="14"/></clipPath>
+    <clipPath id="card3Clip"><rect x="40" y="576" width="800" height="110" rx="14"/></clipPath>
+    <clipPath id="card4Clip"><rect x="40" y="704" width="800" height="130" rx="14"/></clipPath>
+  </defs>
+
+  <!-- Page background -->
+  <rect x="0" y="0" width="880" height="920" rx="20" fill="#FAFAF8" filter="url(#pageShadow)"/>
+
+  <!-- ───── Streak header ───── -->
+  <text x="440" y="92" text-anchor="middle" font-size="32" font-weight="700" fill="#1A1A1A" letter-spacing="-0.5">
+    <tspan font-size="28">🔥</tspan>
+    <tspan dx="10">7 day streak</tspan>
+  </text>
+  <text x="440" y="120" text-anchor="middle" font-size="12" fill="#9B9B9B" font-family="'DM Mono', 'Menlo', monospace" letter-spacing="0.3">longest: 12 days</text>
+
+  <!-- ───── History pill (top right) ───── -->
+  <rect x="740" y="40" width="100" height="32" rx="8" fill="#FFFFFF" stroke="#E4E2DD" filter="url(#cardShadow)"/>
+  <text x="790" y="60" text-anchor="middle" font-size="12" fill="#6B6B6B">📜 History <tspan fill="#9B9B9B" font-family="'DM Mono', monospace">(23)</tspan></text>
+
+  <!-- ───── Status row ───── -->
+  <text x="40" y="184" font-size="11" font-weight="600" fill="#16A34A" letter-spacing="0.5" font-family="'DM Mono', 'Menlo', monospace">TODAY · SHUTDOWN COMPLETE</text>
+  <rect x="752" y="166" width="88" height="26" rx="6" fill="#F4F3F0" stroke="#E4E2DD"/>
+  <text x="796" y="184" text-anchor="middle" font-size="12" fill="#6B6B6B" font-weight="500">⧉ Copy all</text>
+
+  <!-- ─────────────────────────── -->
+  <!-- Card 1: Day in review       -->
+  <!-- ─────────────────────────── -->
+  <rect x="40" y="210" width="800" height="150" rx="14" fill="#FFFFFF" stroke="#E4E2DD" filter="url(#cardShadow)"/>
+  <g clip-path="url(#card1Clip)"><rect x="40" y="210" width="3" height="150" fill="#5B4B8A"/></g>
+  <text x="62" y="240" font-size="11" font-weight="600" fill="#5B4B8A" letter-spacing="0.5" font-family="'DM Mono', 'Menlo', monospace">DAY IN REVIEW</text>
+  <rect x="772" y="226" width="56" height="22" rx="6" fill="#F4F3F0" stroke="#E4E2DD"/>
+  <text x="800" y="241" text-anchor="middle" font-size="11" fill="#6B6B6B">⧉ Copy</text>
+  <g font-size="15" fill="#1A1A1A">
+    <text x="62" y="278">Shipped the auth refactor and got the migration script reviewed.</text>
+    <text x="62" y="304">Lost an hour to the flaky CI. The architecture doc you've been dodging</text>
+    <text x="62" y="330">is still untouched, but the schema blocker is no longer ambiguous.</text>
+  </g>
+
+  <!-- ─────────────────────────── -->
+  <!-- Card 2: Tomorrow's top 3    -->
+  <!-- ─────────────────────────── -->
+  <rect x="40" y="378" width="800" height="180" rx="14" fill="#FFFFFF" stroke="#E4E2DD" filter="url(#cardShadow)"/>
+  <g clip-path="url(#card2Clip)"><rect x="40" y="378" width="3" height="180" fill="#16A34A"/></g>
+  <text x="62" y="408" font-size="11" font-weight="600" fill="#16A34A" letter-spacing="0.5" font-family="'DM Mono', 'Menlo', monospace">TOMORROW'S TOP 3</text>
+  <rect x="772" y="394" width="56" height="22" rx="6" fill="#F4F3F0" stroke="#E4E2DD"/>
+  <text x="800" y="409" text-anchor="middle" font-size="11" fill="#6B6B6B">⧉ Copy</text>
+  <g font-size="15" fill="#1A1A1A">
+    <text x="62" y="448"><tspan fill="#6B6B6B">1.</tspan><tspan dx="8">Send architecture doc to Priya before standup</tspan></text>
+    <text x="62" y="478"><tspan fill="#6B6B6B">2.</tspan><tspan dx="8">Pair with Dan on the flaky CI test</tspan></text>
+    <text x="62" y="508"><tspan fill="#6B6B6B">3.</tspan><tspan dx="8">Write the migration rollback plan</tspan></text>
+  </g>
+
+  <!-- ─────────────────────────── -->
+  <!-- Card 3: Shutdown sentence   -->
+  <!-- ─────────────────────────── -->
+  <rect x="40" y="576" width="800" height="110" rx="14" fill="#FFFFFF" stroke="#E4E2DD" filter="url(#cardShadow)"/>
+  <g clip-path="url(#card3Clip)"><rect x="40" y="576" width="3" height="110" fill="#B45309"/></g>
+  <text x="62" y="606" font-size="11" font-weight="600" fill="#B45309" letter-spacing="0.5" font-family="'DM Mono', 'Menlo', monospace">SHUTDOWN SENTENCE</text>
+  <rect x="772" y="592" width="56" height="22" rx="6" fill="#F4F3F0" stroke="#E4E2DD"/>
+  <text x="800" y="607" text-anchor="middle" font-size="11" fill="#6B6B6B">⧉ Copy</text>
+  <g font-size="17" font-style="italic" font-weight="500" fill="#1A1A1A">
+    <text x="62" y="644">Auth is shipped, migration reviewed, tomorrow starts with the</text>
+    <text x="62" y="668">architecture doc going to Priya.</text>
+  </g>
+
+  <!-- ─────────────────────────── -->
+  <!-- Card 4: Pattern note        -->
+  <!-- ─────────────────────────── -->
+  <rect x="40" y="704" width="800" height="130" rx="14" fill="#FFFFFF" stroke="#E4E2DD" filter="url(#cardShadow)"/>
+  <g clip-path="url(#card4Clip)"><rect x="40" y="704" width="3" height="130" fill="#7C3AED"/></g>
+  <text x="62" y="734" font-size="11" font-weight="600" fill="#7C3AED" letter-spacing="0.5" font-family="'DM Mono', 'Menlo', monospace">PATTERN NOTE</text>
+  <rect x="772" y="720" width="56" height="22" rx="6" fill="#F4F3F0" stroke="#E4E2DD"/>
+  <text x="800" y="735" text-anchor="middle" font-size="11" fill="#6B6B6B">⧉ Copy</text>
+  <g font-size="14" fill="#3D3D3D">
+    <text x="62" y="770">Third time this week CI flakiness ate an hour.</text>
+    <text x="62" y="794">Worth a 30-minute investment to fix the root cause.</text>
+  </g>
+
+  <!-- ───── Footer caption ───── -->
+  <text x="440" y="880" text-anchor="middle" font-size="12" fill="#9B9B9B" font-family="'DM Mono', 'Menlo', monospace" letter-spacing="0.5">60 SECONDS. ONE BUTTON. THE DAY IS CLOSED.</text>
+</svg>

@@ -4,7 +4,7 @@
 
 Type a few quick inputs at the end of your workday. Claude reflects the day back, picks tomorrow's top 3, and writes a "shutdown sentence" so your brain stops chewing on work after hours. A streak counter nudges you to keep the habit going.
 
-![placeholder screenshot](./screenshot.png)
+![Daily Shutdown after a completed ritual: streak counter, day-in-review card, tomorrow's top 3, shutdown sentence, and pattern note](./screenshot.svg)
 
 ## Why this exists
 
@@ -17,7 +17,7 @@ No backend. No accounts. Everything lives in your browser's localStorage.
 ## Setup
 
 ```bash
-git clone https://github.com/tannerharrison/daily-shutdown.git
+git clone https://github.com/tannerharris0n/daily-shutdown.git
 cd daily-shutdown
 npm install
 cp .env.example .env  # fill in ANTHROPIC_API_KEY (or use in-app key entry)
@@ -91,7 +91,3 @@ This repo ships with a `nixpacks.toml` for one-click deploys on Railway, Render,
 ## License
 
 MIT. Fork it, change it, host it, charge for it. Just keep the copyright notice.
-
----
-
-Built by [Tanner Harrison](https://tannerharrison.com) — part of [tools.tannerharrison.com](https://tools.tannerharrison.com).

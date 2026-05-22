@@ -274,7 +274,7 @@ export default function Settings({ serverKeyPresent, onByoKeyChange }) {
 
       <Section title="About" accent={T.purple}>
         <p style={{ fontSize: '13px', color: T.textBody, margin: '0 0 8px', lineHeight: '1.6' }}>
-          Daily Shutdown is open source. Built by Tanner Harrison.
+          Daily Shutdown is open source.
         </p>
         <p style={{ fontSize: '12px', color: T.textFaint, margin: 0, lineHeight: '1.5' }}>
           MIT licensed. Fork it, host it, change anything you want.

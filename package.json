@@ -5,7 +5,6 @@
   "type": "module",
   "description": "60-second end-of-day ritual for ADHD-prone makers",
   "license": "MIT",
-  "author": "Tanner Harrison",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
